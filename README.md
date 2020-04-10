@@ -4,9 +4,19 @@
  но и с вашего смартфона, зайдите в корневую папку,
 выполните команду
 
+### `yarn`
+ 
+затем
+
 ### `yarn build`
 
-далее, если у вас не установлен пакет **serve**, установите его командой: 
+Если после этой команды у вас выскочила ошибка
+
+`./src/styles.scss Error: resolve-url-loader: CSS error source-map information is not available at url() declaration (found orphan CR, try removeCR option)`
+
+ то просто поменяйте окончание строк фалов в указанном файле, например с CRLF на LF. 
+
+Далее, если у вас не установлен пакет **serve**, установите его командой: 
 
 ### `yarn global add serve`
 
@@ -15,6 +25,9 @@
 ### `serve -s build` 
 
 для запуска локального сервера.
+
+А если вы не хотите заморчиваться с этим ~~дерь~~... всем, то просто выполните
+### `yarn start`
 
 You are welcome! ✌
 
